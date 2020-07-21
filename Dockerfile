@@ -4,9 +4,9 @@ ARG VERSION
 
 WORKDIR /source
 
-COPY ./scripts/git_source.sh ./
+COPY ./ ./
 
-RUN /bin/sh ./git_source.sh
+RUN /bin/sh ./scripts/git_source.sh
 
 FROM maven:3.6.3-adoptopenjdk-8
 
